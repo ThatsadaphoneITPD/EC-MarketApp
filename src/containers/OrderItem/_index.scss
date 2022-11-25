@@ -1,0 +1,101 @@
+$small: 425px;
+$medium: 768px;
+.Orderitem {
+  &.ant-list-item {
+    position: relative;
+    margin: 1rem;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    overflow: hidden;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+    z-index: 3;
+  }
+  &.ant-list-item:hover {
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+  }
+  & .OrNote {
+    font-size: 1.2rem;
+    font-weight: bolder;
+    font-style: italic;
+  }
+  & .OrNote > span {
+    color: #b37feb;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    font-style: italic;
+    margin-left: 0.5rem;
+  }
+  & .TitleOrder {
+    font-weight: bold;
+  }
+  & .icon {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    &__itemSend {
+      width: 3rem;
+      background-color: #161819;
+      box-shadow: 1px 2px 2px #8a8690;
+      border-radius: 0.3rem;
+      font-size: 0.8rem;
+      color: rgb(225, 217, 226);
+      font-weight: bolder;
+    }
+    &__view {
+      width: 3rem;
+      background-color: #1aa7ee;
+      box-shadow: 1px 2px 2px #8a8690;
+      border-radius: 0.3rem;
+      font-size: 0.8rem;
+      color: white;
+      font-weight: bolder;
+    }
+    &__itemSend:hover {
+      box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    }
+    &__itemArrive {
+      width: 3rem;
+      background-color: #b56f07;
+      box-shadow: 1px 2px 2px #908f86;
+      border-radius: 0.3rem;
+      font-size: 0.8rem;
+      color: rgb(225, 217, 226);
+      font-weight: bolder;
+    }
+    &__itemArrive:hover {
+      box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    }
+    &__Address {
+      width: 3rem;
+      background-color: #07a63e;
+      box-shadow: 1px 2px 2px #8a8690;
+      border-radius: 0.3rem;
+      font-size: 0.8rem;
+      color: rgb(225, 217, 226);
+      font-weight: bolder;
+    }
+    &__Address:hover {
+      box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    }
+  }
+
+  & .description {
+    // font-weight: bolder;
+    color: #fff;
+    font-weight: 900;
+    left: 150px;
+    bottom: 26%;
+  }
+  & .description-bk {
+    width: 35rem;
+    background-image: linear-gradient(-10deg, #7b91ad, #965bb3);
+    border-radius: 30px;
+    position: absolute;
+    top: 2rem;
+    left: -3rem;
+    height: 15rem;
+    transform: skew(30deg, -6deg);
+    z-index: -1;
+  }
+}

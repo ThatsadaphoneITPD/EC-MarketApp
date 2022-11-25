@@ -1,0 +1,238 @@
+.container {
+  width: 900px;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+  margin-top: 1rem;
+  width: 11rem;
+  height: 20rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.image-container {
+  // position: relative;
+  width: auto;
+  height: 10rem;
+  margin-top: 2rem;
+}
+
+.thumbnail-image {
+  display: block;
+  z-index: -1;
+  border-radius: 10px;
+  width: auto;
+  height: auto;
+  margin: 20% auto 0 auto;
+  max-width: 9rem;
+  max-height: 9rem;
+}
+
+.detail {
+  padding: 0.5rem;
+  margin: auto;
+  bottom: 0;
+}
+
+// .discount {
+//   background-color: red;
+//   padding-top: 1px;
+//   padding-bottom: 1px;
+//   padding-left: 4px;
+//   padding-right: 4px;
+//   font-size: 10px;
+//   border-radius: 6px;
+//   color: #fff;
+// }
+
+.wishlist {
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.first {
+  position: absolute;
+  width: 100%;
+  padding: 9px;
+}
+.CardmenuAtion {
+  position: absolute;
+  left: 6rem;
+  top: -0.2rem;
+  width: 100%;
+  padding: 9px;
+}
+
+.itemEite {
+  width: 3rem;
+  background-color: #69c0ff;
+  box-shadow: 1px 2px 2px #8a8690;
+  border-radius: 0.3rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: bolder;
+}
+.ItemDelete {
+  width: 3rem;
+  background-color: #ff4d4f;
+  box-shadow: 1px 2px 2px #8a8690;
+  border-radius: 0.3rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: bolder;
+}
+
+.dress-name {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.new-price {
+  font-size: 13px;
+  font-weight: bold;
+  color: red;
+}
+
+.rating-star {
+  font-size: 10px !important;
+}
+
+.rating-number {
+  font-size: 10px;
+  color: grey;
+}
+
+.buy {
+  font-size: 12px;
+  color: purple;
+  font-weight: 500;
+}
+
+.discount-percent {
+  font-size: 12px;
+  font-weight: bold;
+  position: relative;
+  top: 5px;
+}
+
+.off {
+  font-size: 14px;
+  position: relative;
+  bottom: 5px;
+}
+
+.rowcard {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+.no-gutters > .colcard,
+.no-gutters > [class*="colcard-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+.colcard,
+.colcard-1,
+.colcard-10,
+.colcard-11,
+.colcard-12,
+.colcard-2,
+.colcard-3,
+.colcard-4,
+.colcard-5,
+.colcard-6,
+.colcard-7,
+.colcard-8,
+.colcard-9,
+.colcard-auto,
+.colcard-lg,
+.colcard-lg-1,
+.colcard-lg-10,
+.colcard-lg-11,
+.colcard-lg-12,
+.colcard-lg-2,
+.colcard-lg-3,
+.colcard-lg-4,
+.colcard-lg-5,
+.colcard-lg-6,
+.colcard-lg-7,
+.colcard-lg-8,
+.colcard-lg-9,
+.colcard-lg-auto,
+.colcard-md,
+.colcard-md-1,
+.colcard-md-10,
+.colcard-md-11,
+.colcard-md-12,
+.colcard-md-2,
+.colcard-md-3,
+.colcard-md-4,
+.colcard-md-5,
+.colcard-md-6,
+.colcard-md-7,
+.colcard-md-8,
+.colcard-md-9,
+.colcard-md-auto,
+.colcard-sm,
+.colcard-sm-1,
+.colcard-sm-10,
+.colcard-sm-11,
+.colcard-sm-12,
+.colcard-sm-2,
+.colcard-sm-3,
+.colcard-sm-4,
+.colcard-sm-5,
+.colcard-sm-6,
+.colcard-sm-7,
+.colcard-sm-8,
+.colcard-sm-9,
+.colcard-sm-auto,
+.colcard-xl,
+.colcard-xl-1,
+.colcard-xl-10,
+.colcard-xl-11,
+.colcard-xl-12,
+.colcard-xl-2,
+.colcard-xl-3,
+.colcard-xl-4,
+.colcard-xl-5,
+.colcard-xl-6,
+.colcard-xl-7,
+.colcard-xl-8,
+.colcard-xl-9,
+.colcard-xl-auto {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.colcard {
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 100%;
+}

@@ -1,0 +1,46 @@
+// h-screen w-full flex flex-col justify-center items-center bg-[#1A2238]
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.notFound {
+  display: flex;
+  position: relative;
+  width: 20rem;
+  border-radius: 20rem;
+  height: 20rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1a2238;
+  &__text {
+    font-size: 100px;
+    color: white;
+  }
+  &__page {
+    position: absolute;
+    top: 7rem;
+    transform: rotate(12deg);
+    background-color: #ff6a3d;
+    font-size: 1rem;
+    text-align: center;
+    width: 10rem;
+    font-weight: 0;
+    border-radius: 1rem;
+    animation-name: spin;
+    animation-duration: 6000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  &__button {
+    border-radius: 2rem;
+    border-color: orange;
+    width: 6rem;
+    color: #ff6a3d;
+    background-color: #1a2238;
+  }
+}

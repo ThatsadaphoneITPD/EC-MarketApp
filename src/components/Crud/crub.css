@@ -1,0 +1,14 @@
+.Crub_table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #222;
+  border-collapse: collapse;
+}
+.Crub_table_striped {
+  display: table;
+  border-collapse: separate;
+  box-sizing: border-box;
+  text-indent: initial;
+  border-spacing: 2px;
+  border-color: grey;
+}

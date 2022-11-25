@@ -1,0 +1,43 @@
+$small: 425px;
+$medium: 768px;
+.pieChart {
+  position: relative;
+  margin: 1rem auto;
+  justify-content: center;
+  border-radius: 0.3rem;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  @media screen and (max-width: $small) {
+    width: 23rem;
+  }
+  @media screen and (min-width: $medium) {
+    width: 30rem;
+  }
+  & .title {
+    font-size: 1.4em;
+    font-weight: 500;
+    justify-content: left;
+  }
+}
+
+.BarChartJs {
+  position: relative;
+  margin: 1rem auto;
+  justify-content: center;
+  border-radius: 0.3rem;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  @media screen and (max-width: $small) {
+    width: 25rem;
+  }
+  @media screen and (min-width: $medium) {
+    width: 38rem;
+  }
+  & .title {
+    font-size: 1.4em;
+    font-weight: 500;
+    justify-content: left;
+  }
+}

@@ -1,0 +1,12 @@
+export { default as LandingPage } from "./Landing";
+export { default as Loginpage } from "./Loginpage";
+export { default as RegisterPage } from "./Registerpage";
+export { default as Home } from "./Home";
+export { default as SearchItem } from "./SearchItem";
+export { default as Store } from "./Store";
+export { default as NotFoundPage } from "./NotFound";
+export { default as ProductPage } from "./Product";
+export { default as ItemDetail } from "./ItemDetail";
+export { default as ProtectedPage } from "./ProtectPage";
+export { default as Orderpage } from "./Orderpage";
+export { default as Profile } from "./Profile";

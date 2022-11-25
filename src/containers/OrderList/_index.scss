@@ -1,0 +1,203 @@
+$small: 425px;
+$medium: 768px;
+
+.orderCancel {
+  pointer-events: none;
+  background-color: white;
+  opacity: 0.7;
+  position: relative;
+  margin: 0 auto;
+  width: 24rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  height: auto;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
+  & .CancelledOrder {
+    width: 15rem;
+    position: absolute;
+    margin-top: 5rem;
+    margin-left: 4rem;
+  }
+}
+
+.order {
+  position: relative;
+  margin: 0 auto;
+  width: 24rem;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1rem;
+  height: auto;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  &__head {
+    text-align: left;
+    padding-bottom: 0.5rem;
+    font-weight: bold;
+    & > span {
+      color: #36cfc9;
+      font-weight: bolder;
+    }
+  }
+
+  & .CancelledOrder {
+    width: 15rem;
+    position: absolute;
+    margin-top: 5rem;
+    margin-left: 4rem;
+  }
+}
+.coolDate {
+  position: relative;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  & .Year {
+    position: absolute;
+    left: 0.3rem;
+    font-weight: bold;
+  }
+  & .Day {
+    position: absolute;
+    top: 0.4rem;
+    left: 0.2rem;
+    color: #36cfc9;
+    font-weight: 600;
+    font-style: italic;
+    text-decoration: underline;
+  }
+  & .Month {
+    position: absolute;
+    top: 1.8rem;
+    left: 0.4rem;
+    font-weight: bold;
+  }
+}
+
+.orderadress {
+  font-weight: 600;
+}
+.ordercustomer {
+  @media screen and (max-width: $small) {
+    width: 10rem;
+  }
+  @media screen and (min-width: $medium) {
+    width: 14rem;
+  }
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+}
+
+.orderItem {
+  border-radius: 1rem;
+  box-shadow: 0 0.0725rem 0.125rem 0.0725rem #00000026;
+  width: auto;
+  height: auto;
+  background-color: white;
+  margin: 0 auto;
+
+  & tr > td > img {
+    border-radius: 1rem;
+    padding: 0.1rem;
+
+    @media screen and (max-width: $small) {
+      width: 10rem;
+      height: 5rem;
+    }
+    @media screen and (min-width: $medium) {
+      width: 10rem;
+      height: 5rem;
+    }
+  }
+  & .GetItem {
+    color: #389e0d;
+  }
+  & .statuesDeliver {
+    color: #fa8c16;
+  }
+  & .send {
+    color: #783dee;
+  }
+  & .NotYet {
+    color: #cf1322;
+  }
+}
+.orderItem:hover {
+  box-shadow: rgb(38, 57, 77) 0px 10px 25px -10px;
+}
+
+.option {
+  margin-top: 0.5rem;
+  & .PaidOnline {
+    color: #389e0d;
+  }
+  & .Notpaid {
+    color: #cf1322;
+  }
+  & .statuesDeliver {
+    color: #fa8c16;
+  }
+  & .statuesDone {
+    color: #52c41a;
+  }
+  & .TotalPrice {
+    color: #08979c;
+  }
+}
+
+.Orderlist {
+  padding: 1rem 0;
+  width: 25rem;
+  margin: 0 auto;
+
+  & .OrderItem {
+    width: 25rem;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1rem 1rem 0.5rem 1rem;
+    margin: 0.2rem 0 0.2rem 0;
+    &.ant-list-item:hover {
+      box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    }
+    & .OrNote {
+      font-size: 1.2rem;
+      font-weight: bolder;
+      font-style: italic;
+    }
+    & .OrNote > span {
+      color: #b37feb;
+      font-size: 1.2rem;
+      font-weight: bolder;
+      font-style: italic;
+      margin-left: 0.5rem;
+    }
+
+    & .OrderHead {
+      text-align: left;
+      padding-bottom: 0.1rem;
+      font-weight: bold;
+      color: #36cfc9;
+      font-weight: bolder;
+    }
+  }
+  & .CancelOrcart {
+    width: 13rem;
+    position: absolute;
+    margin-top: -0.4rem;
+    margin-left: 4rem;
+    z-index: 2;
+  }
+}
+.orderCartCancel {
+  pointer-events: none;
+  opacity: 0.7;
+  position: relative;
+  & .CancelOrcart {
+    width: 13rem;
+    position: absolute;
+    margin-top: -0.4rem;
+    margin-left: 4rem;
+    z-index: 2;
+  }
+}

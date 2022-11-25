@@ -1,0 +1,15 @@
+.cardBoard {
+  position: relative;
+  justify-content: center;
+  & .boardCardTitle {
+    position: absolute;
+    top: 1rem;
+    left: 3rem;
+    z-index: 3;
+    // background-color: #ffa940;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+}

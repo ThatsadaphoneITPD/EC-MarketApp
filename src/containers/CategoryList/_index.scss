@@ -1,0 +1,19 @@
+.CateLitCard {
+  padding: 1rem 1rem;
+  & .cardItem {
+    width: 8rem;
+    text-align: center;
+    background-color: white;
+    margin: 0.2rem 0 0.2rem 0;
+    border-radius: 1rem;
+    & .catecontent {
+      padding: 1rem;
+      & .space {
+        padding-left: 0.5rem;
+      }
+    }
+    &:hover {
+      box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    }
+  }
+}

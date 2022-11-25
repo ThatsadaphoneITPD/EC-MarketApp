@@ -1,0 +1,71 @@
+$small: 425px;
+$medium: 768px;
+.positionStay {
+  width: 8rem;
+  @media screen and (max-width: $small) {
+    position: absolute;
+    bottom: -15rem;
+    right: 0;
+    // height: 1rem;
+  }
+  @media screen and (min-width: $medium) {
+    position: absolute;
+    bottom: 6rem;
+    right: 4rem;
+    height: 1rem;
+  }
+}
+.containerFloat {
+  & .addFloater {
+    animation: float 3s ease-out infinite;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 5rem;
+    border-color: #73d13d;
+    background-color: #95de64;
+    margin-left: 2rem;
+  }
+  & .addFloater:hover {
+    box-shadow: rgba(8, 227, 48, 0.17) 0px -23px 25px 0px inset,
+      rgba(8, 227, 48, 0.15) 0px -36px 30px 0px inset,
+      rgba(8, 227, 48, 0.1) 0px -79px 40px 0px inset,
+      rgba(8, 227, 48, 0.06) 0px 2px 1px, rgba(8, 227, 48, 0.09) 0px 4px 2px,
+      rgba(8, 227, 48, 0.09) 0px 8px 4px, rgba(8, 227, 48, 0.09) 0px 16px 8px,
+      rgba(8, 227, 48, 0.09) 0px 32px 16px;
+    width: 4.3rem;
+    height: 4.3rem;
+    margin-left: 1.7rem;
+  }
+
+  @keyframes float {
+    50% {
+      transform: translate(0, 20px);
+    }
+  }
+  & .shadowFrame {
+    margin-left: 2rem;
+    width: 4rem;
+    margin-top: 15px;
+  }
+  * .shadow {
+    animation: shrink 3s ease-out infinite;
+    transform-origin: center center;
+    ellipse {
+      transform-origin: center center;
+    }
+  }
+  @keyframes shrink {
+    0% {
+      width: 90%;
+      margin: 0 5%;
+    }
+    50% {
+      width: 60%;
+      margin: 0 18%;
+    }
+    100% {
+      width: 90%;
+      margin: 0 5%;
+    }
+  }
+}

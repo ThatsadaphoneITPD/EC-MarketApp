@@ -1,0 +1,94 @@
+$small: 425px;
+$medium: 768px;
+// SildeShow
+.slideCarousel {
+  @media screen and (max-width: $small) {
+    width: 20rem;
+    height: 10rem;
+  }
+  @media screen and (min-width: $medium) {
+    width: 40rem;
+    height: 20rem;
+  }
+  margin: 0 auto;
+}
+.slidecontainer {
+  position: relative;
+  @media screen and (max-width: $small) {
+    width: 20rem;
+  }
+  @media screen and (min-width: $medium) {
+    width: 50rem;
+  }
+  margin: 0 auto;
+  & > img {
+    @media screen and (max-width: $small) {
+      width: 20rem;
+      height: 10rem;
+    }
+    @media screen and (min-width: $medium) {
+      width: 50rem;
+      height: 20rem;
+    }
+  }
+  & .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    @media screen and (max-width: $small) {
+      font-size: 1rem;
+      width: 15rem;
+      padding: 20px;
+    }
+    @media screen and (min-width: $medium) {
+      font-size: 1.5rem;
+      width: 15rem;
+      padding: 20px;
+    }
+    text-align: left;
+    color: #5c4fc9;
+  }
+  & .subcontent {
+    position: absolute;
+    @media screen and (max-width: $small) {
+      top: 2rem;
+      font-size: 0.8rem;
+      width: 15rem;
+      padding: 20px;
+    }
+    @media screen and (min-width: $medium) {
+      top: 5rem;
+      font-size: 1rem;
+      width: 20rem;
+      padding: 20px;
+    }
+    left: 0;
+    text-align: left;
+    color: #5c4fc9;
+  }
+  & .shopNow {
+    position: absolute;
+    @media screen and (max-width: $small) {
+      top: 7rem;
+      left: 2rem;
+      padding: 0.2rem;
+    }
+    @media screen and (min-width: $medium) {
+      top: 14rem;
+      left: 8rem;
+      padding: 0.5rem;
+    }
+
+    text-align: left;
+    border-radius: 1.8rem;
+    border-width: 0.2rem;
+    color: #5c4fc9;
+    border-color: #5c4fc9;
+
+    &:hover {
+      background-color: #5c4fc9;
+      color: white;
+      border-color: wheat;
+    }
+  }
+}

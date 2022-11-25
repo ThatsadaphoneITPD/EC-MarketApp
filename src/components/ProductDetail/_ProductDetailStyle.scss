@@ -1,0 +1,417 @@
+/* @import "../../../node_modules/antd/dist/antd.css"; */
+
+:root {
+  --primaryDetail-color-font: "Jost", "Helvetica", "Arial", sans-serif;
+  --primaryDetail-colorDetail-color: rgb(231, 231, 231);
+  --secondaryDetail-color-color: rgb(27, 27, 27);
+  --primaryDetail-color-white: rgb(255, 255, 255);
+  --gray-light-color: rgb(229, 223, 217);
+  --gray-dark-color: rgb(153, 153, 153);
+  --blackDetail-color-color: rgb(49, 49, 49);
+  --blackDetail-color-text-h1: #080808;
+  --header--gadient: linear-gradient(
+    to bottom,
+    #25211e 0,
+    rgba(37, 33, 30, 0) 100%
+  );
+}
+
+@media only screen and (max-width: 321px) {
+  .Detail_Carousel_size {
+    top: 2.2rem !important;
+  }
+  .Detail_Box {
+    margin-top: 8rem !important;
+  }
+  .Modal_image {
+    margin-top: 50%;
+    width: 90% !important;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .Deatail_Col_Space {
+    margin-top: 0 !important;
+  }
+  .Dettail_Shop_This {
+    font-size: 0.6rem !important;
+  }
+  .Detail_Box {
+    margin-top: 6rem !important;
+  }
+  .Modal_image {
+    margin-top: 50%;
+    width: 90% !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .Deatail_Col_Space {
+    margin-top: 35% !important;
+  }
+  .Detail_Title {
+    font-size: 18px;
+  }
+  .Modal_image {
+    margin-top: 50%;
+    width: 90% !important;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .Modal_image {
+    margin-top: 20% !important;
+    width: 90% !important;
+  }
+}
+@media only screen and (max-width: 1441px) {
+  .Deatail_Col_Space2 {
+    margin-bottom: 10% !important;
+  }
+  .Modal_image {
+    margin-top: 10%;
+    width: 90% !important;
+  }
+}
+
+.Detail_CarouselStyle_Model {
+  margin-top: 1rem;
+  max-width: 100%;
+  max-height: auto;
+  opacity: 1;
+  margin-left: auto;
+  margin-right: auto;
+}
+.Detail_Image_frame {
+  margin-top: 0;
+}
+
+.Detail_CarouselStyle {
+  padding: 15% 15%;
+  max-width: 100%;
+  max-height: auto;
+  opacity: 1;
+  margin-left: auto;
+  margin-right: auto;
+}
+.Detail_Carousel_size {
+  width: 100%;
+  height: auto;
+  max-height: auto;
+  max-width: auto;
+  position: absolute;
+  vertical-align: middle;
+}
+.Detail_Carousel_color {
+  background-color: var(--primaryDetail-colorDetail-color);
+}
+
+.Detail_CarouselStyle .slick-track {
+  max-width: 100%;
+  max-height: 90%;
+  height: calc(75.6vh + 200px);
+}
+
+.ant-carousel,
+.slick-next::before {
+  content: "" !important;
+}
+.ant-carousel .slick-prev::before {
+  content: "" !important;
+}
+.Detail_Alltext_Style {
+  text-align: center;
+}
+
+.Detail_Title {
+  margin: auto !important;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  width: 88%;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--blackDetail-color-text-h1);
+}
+
+.Divider_Detail {
+  margin-top: 5%;
+  height: 1px;
+  background-color: #c8c6c5;
+  display: block;
+}
+
+.Detail_Box {
+  margin-top: 10rem;
+  text-align: center;
+  background-color: transparent;
+}
+.Detail_box_size {
+  width: 10rem;
+  height: auto;
+  max-height: 90%;
+  right: 0;
+  left: 0;
+  margin: auto !important;
+}
+.Detail_Row_Wrap_Accor {
+  max-width: auto;
+  max-height: auto;
+  right: 0;
+  left: 0;
+  margin: auto !important;
+}
+
+.Add_Shopping_Bag {
+  margin: 10px;
+  padding: 12px 10px;
+  box-sizing: border-box;
+  font-weight: 400;
+  font-style: normal;
+  border-style: solid;
+  border-width: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #1b1b1b;
+  border-color: #1b1b1b;
+  color: #e5dfd9;
+  letter-spacing: 1px;
+  display: block;
+  width: 100%;
+  height: 1%;
+  line-height: 13px;
+}
+.Add_Shopping_Gift {
+  margin: 10px;
+  padding: 12px 10px;
+  box-sizing: border-box;
+  font-weight: 400;
+  font-style: normal;
+  border-style: solid;
+  border-width: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: block;
+  width: 100%;
+  height: 1%;
+  line-height: 13px;
+}
+.Detail_color {
+  display: inline-block;
+  line-height: 35px;
+  margin-left: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 250px;
+  text-overflow: ellipsis;
+  color: var(--secondaryDetail-color-color);
+  position: relative;
+  padding-right: 20px;
+  background-color: transparent;
+  border: transparent;
+  box-sizing: border-box;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+}
+
+.Detail_color:hover,
+.Detail_color:focus {
+  color: var(--gray-dark-color);
+  background: var(--secondaryDetail-color-color);
+  background-color: transparent;
+}
+
+.Detail_arrow {
+  margin: 4;
+}
+
+.Modal_image {
+  max-width: 90%;
+}
+
+.Add_Shopping_Bag.ant-btn:hover,
+.Add_Shopping_Bag.ant-btn:focus {
+  color: #e5dfd9 !important;
+  border-color: var(--secondaryDetail-color-color) !important;
+  background: var(--primaryDetail-color-white) !important;
+  background-color: transparent !important;
+}
+.Add_Shopping_Bag.ant-btn:hover,
+.Add_Shopping_Bag.ant-btn:focus {
+  background-color: #313131 !important;
+  border-color: #313131 !important;
+}
+
+.Add_Shopping_Gift.ant-btn {
+  background-color: transparent !important;
+  color: var(--secondaryDetail-color-color);
+  border-color: #313131 !important;
+}
+
+.Detail_Accordion_box {
+  background: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 93%;
+  right: 0;
+  left: 0;
+  margin: auto !important;
+}
+.Detail_Accordin_Row_Box {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.Detail_Accordion_Menu {
+  background: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  height: 100%;
+  right: 0;
+  left: 0;
+  margin: auto !important;
+}
+
+.VARIATIONS_Title {
+  font-size: 12px;
+  letter-spacing: initial;
+  font-variant-ligatures: none;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1;
+  margin-bottom: 15px;
+  padding: 0 8px;
+  text-transform: uppercase;
+}
+.Detail_Carousel_Accordion {
+  background-color: var(--primaryDetail-colorDetail-color);
+}
+.Detail_VARIATIONS {
+  max-width: 100%;
+  padding: 0 10%;
+  max-height: 15%;
+  width: auto;
+  height: auto;
+}
+.Accordion_Menu_content {
+  padding: 5px 5px;
+  font-size: 12px;
+  height: auto;
+  color: #4b4b4b;
+  line-height: 20px;
+  width: auto;
+  max-width: 580px;
+}
+
+.Accordion_table table td,
+th {
+  border: 1px solid var(--blackDetail-color-color);
+}
+
+.Accordion_table table {
+  width: 100%;
+  border-collapse: collapse;
+  text-indent: 10px;
+}
+.Accordion_table_pay table td,
+th {
+  border: 1px solid transparent;
+}
+.Accordion_table_pay table {
+  margin-left: 7rem;
+  width: 25rem;
+  border-collapse: collapse;
+  text-align: left;
+}
+.Accordion_table_pay table td:hover {
+  background-color: #69c0ff;
+}
+.imgPay {
+  width: 1.5rem;
+  margin: 2px 6px 2px 2px;
+}
+
+.Accordion_List ul li .ant-menu ul .ant-menu ol {
+  list-style: disc !important;
+  margin: 10px 0 !important;
+  padding-bottom: 10px !important;
+}
+.Accordion_List {
+  text-align: left;
+}
+
+.Suggest_Carousel_size {
+  width: 100%;
+  height: auto;
+  max-height: auto;
+  max-width: 89%;
+  left: 0;
+  right: 0;
+  margin: auto !important;
+}
+
+.Suggent_CarouselStyle {
+  border-radius: 10px;
+  width: auto;
+  height: auto;
+  margin: 20% auto 0 auto;
+  max-width: 9rem;
+  max-height: 9rem;
+}
+.Recommend_Detail_Carousel .slick-slide {
+  background-color: none;
+}
+.Recommend_Detail_Box {
+  background-color: white;
+}
+
+.Suggent_New_item {
+  text-align: center;
+  width: auto;
+  background-color: white;
+  line-height: 2;
+}
+.Suggent_New_item button {
+  color: var(--secondaryDetail-color-color);
+  background-color: transparent;
+  border: transparent;
+}
+.Suggent_New_item button:hover {
+  color: var(--gray-dark-color);
+}
+
+.Detail_Item_box {
+  width: 100%;
+  padding: 20px 22px;
+  background-color: var(--primaryDetail-color-white);
+  display: block;
+}
+.Detail_Item_box img {
+  max-width: 65%;
+  max-height: 45%;
+}
+
+.Repos_icon {
+  cursor: pointer;
+  display: block;
+  margin: 10px auto;
+  left: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 25%);
+}
+
+.Modal_Wrap,
+.ant-modal-wrap {
+  overflow: hidden !important;
+}
+
+.Detail_text {
+  font-size: 0.8rem;
+  margin: 0 0 10px;
+}

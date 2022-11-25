@@ -1,0 +1,75 @@
+$small: 425px;
+$medium: 768px;
+.PromotionCarousel {
+  @media screen and (max-width: $small) {
+    width: 22rem;
+    height: 10rem;
+  }
+  @media screen and (min-width: $medium) {
+    width: 35rem;
+    height: 13rem;
+  }
+  margin: 0 auto;
+}
+.PromotionCard {
+  border-radius: 1rem;
+  box-shadow: 0 0.0725rem 0.125rem 0.0725rem #00000026;
+  width: auto;
+  height: auto;
+  background-color: white;
+  margin: 20% auto 20% auto;
+  max-width: 10rem;
+
+  @media screen and (max-width: $small) {
+    width: 10rem;
+  }
+  @media screen and (min-width: $medium) {
+    width: 10rem;
+  }
+  & > img {
+    border-radius: 1rem;
+    padding: 0.1rem;
+
+    @media screen and (max-width: $small) {
+      width: 10rem;
+      height: 5rem;
+    }
+    @media screen and (min-width: $medium) {
+      width: 10rem;
+      height: 5rem;
+    }
+  }
+  & .Procontent {
+    @media screen and (max-width: $small) {
+      padding-left: 1rem;
+      font-size: 1rem;
+      width: 5rem;
+    }
+    @media screen and (min-width: $medium) {
+      padding-left: 1rem;
+      font-size: 1rem;
+      width: 9rem;
+    }
+    text-align: left;
+    color: #5c4fc9;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+  }
+  & .Proprice {
+    @media screen and (max-width: $small) {
+      padding-left: 1rem;
+      font-size: 1rem;
+      width: 5rem;
+    }
+    @media screen and (min-width: $medium) {
+      padding-left: 1rem;
+      font-size: 1rem;
+      width: 5rem;
+    }
+  }
+}
+.PromotionCard:hover {
+  box-shadow: rgb(38, 57, 77) 0px 10px 25px -10px;
+}

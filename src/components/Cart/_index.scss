@@ -1,0 +1,311 @@
+.tableCart {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #222;
+}
+.tableCart td,
+.tableCart th {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+.tableCart thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+}
+.tableCart tbody + tbody {
+  border-top: 2px solid #dee2e6;
+}
+.tableCart-sm td,
+.tableCart-sm th {
+  padding: 0.3rem;
+}
+.tableCart-bordered {
+  border: 1px solid #dee2e6;
+}
+.tableCart-bordered td,
+.tableCart-bordered th {
+  border: 1px solid #dee2e6;
+}
+.tableCart-bordered thead td,
+.tableCart-bordered thead th {
+  border-bottom-width: 2px;
+}
+.tableCart-borderless tbody + tbody,
+.tableCart-borderless td,
+.tableCart-borderless th,
+.tableCart-borderless thead th {
+  border: 0;
+}
+.tableCart-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.tableCart-hover tbody tr:hover {
+  color: #222;
+  background-color: rgba(0, 0, 0, 0.075);
+}
+.tableCart-primary,
+.tableCart-primary > td,
+.tableCart-primary > th {
+  background-color: #bddfec;
+}
+.tableCart-primary tbody + tbody,
+.tableCart-primary td,
+.tableCart-primary th,
+.tableCart-primary thead th {
+  border-color: #85c3db;
+}
+.tableCart-hover .tableCart-primary:hover {
+  background-color: #a9d5e6;
+}
+.tableCart-hover .tableCart-primary:hover > td,
+.tableCart-hover .tableCart-primary:hover > th {
+  background-color: #a9d5e6;
+}
+.tableCart-secondary,
+.tableCart-secondary > td,
+.tableCart-secondary > th {
+  background-color: #fbfbfb;
+}
+.tableCart-secondary tbody + tbody,
+.tableCart-secondary td,
+.tableCart-secondary th,
+.tableCart-secondary thead th {
+  border-color: #f7f7f7;
+}
+.tableCart-hover .tableCart-secondary:hover {
+  background-color: #eee;
+}
+.tableCart-hover .tableCart-secondary:hover > td,
+.tableCart-hover .tableCart-secondary:hover > th {
+  background-color: #eee;
+}
+.tableCart-success,
+.tableCart-success > td,
+.tableCart-success > th {
+  background-color: #c3ebc4;
+}
+.tableCart-success tbody + tbody,
+.tableCart-success td,
+.tableCart-success th,
+.tableCart-success thead th {
+  border-color: #8fd991;
+}
+.tableCart-hover .tableCart-success:hover {
+  background-color: #b0e5b1;
+}
+.tableCart-hover .tableCart-success:hover > td,
+.tableCart-hover .tableCart-success:hover > th {
+  background-color: #b0e5b1;
+}
+.tableCart-info,
+.tableCart-info > td,
+.tableCart-info > th {
+  background-color: #d8f0f9;
+}
+.tableCart-info tbody + tbody,
+.tableCart-info td,
+.tableCart-info th,
+.tableCart-info thead th {
+  border-color: #b7e3f5;
+}
+.tableCart-hover .tableCart-info:hover {
+  background-color: #c2e8f6;
+}
+.tableCart-hover .tableCart-info:hover > td,
+.tableCart-hover .tableCart-info:hover > th {
+  background-color: #c2e8f6;
+}
+.tableCart-warning,
+.tableCart-warning > td,
+.tableCart-warning > th {
+  background-color: #ffddbf;
+}
+.tableCart-warning tbody + tbody,
+.tableCart-warning td,
+.tableCart-warning th,
+.tableCart-warning thead th {
+  border-color: #ffc088;
+}
+.tableCart-hover .tableCart-warning:hover {
+  background-color: #ffcfa6;
+}
+.tableCart-hover .tableCart-warning:hover > td,
+.tableCart-hover .tableCart-warning:hover > th {
+  background-color: #ffcfa6;
+}
+.tableCart-danger,
+.tableCart-danger > td,
+.tableCart-danger > th {
+  background-color: #ffcac7;
+}
+.tableCart-danger tbody + tbody,
+.tableCart-danger td,
+.tableCart-danger th,
+.tableCart-danger thead th {
+  border-color: #ff9c96;
+}
+.tableCart-hover .tableCart-danger:hover {
+  background-color: #ffb2ae;
+}
+.tableCart-hover .tableCart-danger:hover > td,
+.tableCart-hover .tableCart-danger:hover > th {
+  background-color: #ffb2ae;
+}
+.tableCart-light,
+.tableCart-light > td,
+.tableCart-light > th {
+  background-color: #fcfcfc;
+}
+.tableCart-light tbody + tbody,
+.tableCart-light td,
+.tableCart-light th,
+.tableCart-light thead th {
+  border-color: #fafafa;
+}
+.tableCart-hover .tableCart-light:hover {
+  background-color: #efefef;
+}
+.tableCart-hover .tableCart-light:hover > td,
+.tableCart-hover .tableCart-light:hover > th {
+  background-color: #efefef;
+}
+.tableCart-dark,
+.tableCart-dark > td,
+.tableCart-dark > th {
+  background-color: #cfcfcf;
+}
+.tableCart-dark tbody + tbody,
+.tableCart-dark td,
+.tableCart-dark th,
+.tableCart-dark thead th {
+  border-color: #a7a7a7;
+}
+.tableCart-hover .tableCart-dark:hover {
+  background-color: #c2c2c2;
+}
+.tableCart-hover .tableCart-dark:hover > td,
+.tableCart-hover .tableCart-dark:hover > th {
+  background-color: #c2c2c2;
+}
+.tableCart-active,
+.tableCart-active > td,
+.tableCart-active > th {
+  background-color: rgba(0, 0, 0, 0.075);
+}
+.tableCart-hover .tableCart-active:hover {
+  background-color: rgba(0, 0, 0, 0.075);
+}
+.tableCart-hover .tableCart-active:hover > td,
+.tableCart-hover .tableCart-active:hover > th {
+  background-color: rgba(0, 0, 0, 0.075);
+}
+.tableCart .thead-dark th {
+  color: #fff;
+  background-color: #333;
+  border-color: #464646;
+}
+.tableCart .thead-light th {
+  color: #555;
+  background-color: #f0f0f0;
+  border-color: #dee2e6;
+}
+.tableCart-dark {
+  color: #fff;
+  background-color: #333;
+}
+.tableCart-dark td,
+.tableCart-dark th,
+.tableCart-dark thead th {
+  border-color: #464646;
+}
+.tableCart-dark.tableCart-bordered {
+  border: 0;
+}
+.tableCart-dark.tableCart-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+.tableCart-dark.tableCart-hover tbody tr:hover {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.075);
+}
+@media (max-width: 575.98px) {
+  .tableCart-responsive-sm {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .tableCart-responsive-sm > .tableCart-bordered {
+    border: 0;
+  }
+}
+@media (max-width: 767.98px) {
+  .tableCart-responsive-md {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .tableCart-responsive-md > .tableCart-bordered {
+    border: 0;
+  }
+}
+@media (max-width: 991.98px) {
+  .tableCart-responsive-lg {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .tableCart-responsive-lg > .tableCart-bordered {
+    border: 0;
+  }
+}
+@media (max-width: 1199.98px) {
+  .tableCart-responsive-xl {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .tableCart-responsive-xl > .tableCart-bordered {
+    border: 0;
+  }
+}
+.tableCart-responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.tableCart-responsive > .tableCart-bordered {
+  border: 0;
+}
+.textCart {
+  text-align: center;
+}
+
+$background-dark: rgba(darken(rgb(221, 219, 219), 10%), 1/ 2);
+$background-darker: rgba(darken(rgb(215, 204, 204), 15%), 1 / 2);
+
+@mixin IconCart($color, $hovercolor) {
+  color: $color;
+  &:hover {
+    color: $hovercolor;
+    background-image: linear-gradient(
+      transparent,
+      $background-dark 40%,
+      $background-darker
+    );
+  }
+}
+
+.itemCartRemove {
+  @include IconCart(red, black);
+}
+.itemCartIcon {
+  @include IconCart(none, white);
+  border-radius: 5px;
+  margin: 14px 5px 0 5px;
+}

@@ -1,0 +1,167 @@
+// @import "bourbon";
+
+// Colors
+
+$greenSeaweed: rgb(212, 14, 212);
+$blueQueen: rgb(51, 255, 255);
+$redFire: rgba(244, 91, 105, 1);
+$neFire: rgb(69, 223, 171);
+
+// Fonts
+$fontAsap: "Asap", sans-serif;
+
+.login {
+  overflow: hidden;
+  background-color: white;
+  padding: 40px 30px 30px 30px;
+  border-radius: 10px;
+  position: relative;
+  left: 35%;
+  width: 300px;
+  // max-width: auto;
+  transform: translate(0, 0);
+  transition: transform 300ms, box-shadow 300ms;
+  box-shadow: 5px 10px 10px rgba($greenSeaweed, 0.2);
+  @media only screen and (max-width: 425px) {
+    width: 180px;
+    position: relative;
+    left: auto;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 55%;
+    border-bottom-left-radius: 60%;
+    border-bottom-right-radius: 40%;
+    z-index: -1;
+  }
+
+  &::before {
+    left: 40%;
+    bottom: -130%;
+    background-color: rgba($blueQueen, 0.15);
+    animation: wawes 6s infinite linear;
+  }
+
+  &::after {
+    left: 35%;
+    bottom: -125%;
+    background-color: rgba($greenSeaweed, 0.2);
+    animation: wawes 7s infinite;
+  }
+
+  > input {
+    font-family: $fontAsap;
+    display: block;
+    border-radius: 5px;
+    font-size: 16px;
+    background: white;
+    width: 100%;
+    border: 0;
+    padding: 10px 10px;
+    margin: 15px -10px;
+  }
+
+  > button {
+    font-family: $fontAsap;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    width: 80px;
+    border: 0;
+    padding: 10px 0;
+    margin-top: 10px;
+    margin-left: -5px;
+    border-radius: 5px;
+    background-color: $redFire;
+    transition: background-color 300ms;
+
+    &:hover {
+      background-color: darken($redFire, 5%);
+    }
+  }
+}
+
+@keyframes wawes {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.register {
+  overflow: hidden;
+  background-color: white;
+  padding: 40px 30px 30px 30px;
+  border-radius: 10px;
+  position: relative;
+  left: 35%;
+  width: 300px;
+  width: 300px;
+  max-width: auto;
+  transform: translate(0, 0);
+  transition: transform 300ms, box-shadow 300ms;
+  box-shadow: 5px 10px 10px rgba($greenSeaweed, 0.2);
+  @media only screen and (max-width: 425px) {
+    width: 200px;
+    font-size: 4px;
+    position: relative;
+    left: auto;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    border-top-left-radius: 30%;
+    border-top-right-radius: 45%;
+    border-bottom-left-radius: 35%;
+    border-bottom-right-radius: 40%;
+    z-index: -1;
+  }
+
+  &::before {
+    left: 40%;
+    bottom: -130%;
+    background-color: rgba($blueQueen, 0.15);
+    animation: wawes 6s infinite linear;
+  }
+
+  &::after {
+    left: 35%;
+    bottom: -125%;
+    background-color: rgba($greenSeaweed, 0.2);
+    animation: wawes 7s infinite;
+  }
+
+  > button {
+    font-family: $fontAsap;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    width: 100px;
+    max-width: auto;
+    border: 0;
+    padding: 10px 0;
+    margin-top: 10px;
+    margin-left: -5px;
+    border-radius: 5px;
+    background-color: $neFire;
+    transition: background-color 300ms;
+
+    &:hover {
+      background-color: darken($neFire, 5%);
+    }
+  }
+}
