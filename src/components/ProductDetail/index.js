@@ -1,12 +1,13 @@
 import React, { useEffect } from "react";
 import { Row, Col } from "antd";
 import { DetailCarousel, Accordion, WrapInfo } from "./subElement";
+import Loading from "../Loading";
 
 export default function ProductDetail({ detail, error, products }) {
   return (
     <>
       {!detail ? (
-        <>can't do Action as "{error}"</>
+        <Loading></Loading>
       ) : (
         <div style={{ position: "relative" }}>
           <DetailCarousel detail={detail} />

@@ -8,14 +8,7 @@ function Mainscreen({ title, page, children, user }) {
         <div className="page">
           {title && (
             <>
-              <h1 className="heading">
-                {" "}
-                {title}
-                <br />
-                <strong>{user}</strong>
-                <br />
-                {page} Interface
-              </h1>
+              <h1 className="heading">{title}</h1>
             </>
           )}
           {children}

@@ -27,7 +27,7 @@ export default function ProdductPage() {
   return (
     <>
       <MainScreen
-        title="Wellcom back to "
+        title="Wellcom to Centre Market  "
         page={userInfo.role}
         user={userInfo.account}
       >

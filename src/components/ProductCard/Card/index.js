@@ -96,20 +96,20 @@ export default function Card({ product, render, setRender }) {
     <div className="card" key={product._id}>
       {userInfo == null ? (
         <div className="first">
-          <div className="">
+          {/* <div className="">
             <span className="wishlist">
               <AiOutlineHeart />
             </span>
-          </div>
+          </div> */}
         </div>
       ) : (
         (userInfo.role === "shopper" && (
           <div className="first">
-            <div className="">
+            {/* <div className="">
               <span className="wishlist">
                 <AiOutlineHeart />
               </span>
-            </div>
+            </div> */}
           </div>
         )) ||
         (userInfo.role === "merchant" && userInfo.accountId === product.user && (

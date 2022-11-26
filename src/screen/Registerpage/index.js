@@ -77,7 +77,7 @@ export default function Registerpage() {
 
   useEffect(() => {}, [userInfo]);
   if (userInfo) {
-    return <Navigate to={"/mynotes"} state={{ from: location }} replace />;
+    return <Navigate to={"/home"} state={{ from: location }} replace />;
   }
 
   const submitHandler = (e) => {
@@ -93,63 +93,56 @@ export default function Registerpage() {
       {loading ? (
         <Loading />
       ) : (
-        <MainScreen title="REGISTER">
-          <div>
-            {error && <ErrorMessage variant="error" message={error} />}
-            {message && <ErrorMessage variant="error" message={error} />}
+        <div>
+          <form className="register" onSubmit={submitHandler}>
+            <h1>Sign Up Account</h1>
+            <Input
+              addonBefore="User name"
+              type="name"
+              value={username}
+              placeholder="Enter name"
+              onChange={(e) => setUsername(e.target.value)}
+            />
+            <br />
+            <br />
+            <Input
+              addonBefore="Email"
+              type="email"
+              value={email}
+              placeholder="Enter email"
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <br />
+            <br />
+            <Input
+              addonBefore="Password"
+              type={!passwordShown ? "password" : "text"}
+              addonAfter={
+                <IconTaggle Action={togglePassword} Condition={passwordShown} />
+              }
+              value={password}
+              placeholder="Password"
+              autocomplete="new-password"
+              onChange={(e) => setPassword(e.target.value)}
+            />
+            <br />
+            <br />
+            <Input
+              addonBefore="Confirm  "
+              type={!confirmShown ? "password" : "text"}
+              addonAfter={
+                <IconTaggle Action={toggleConfirm} Condition={confirmShown} />
+              }
+              value={confirmpassword}
+              placeholder="Confirm Password"
+              onChange={(e) => setConfirmPassword(e.target.value)}
+            />
 
-            <form className="register" onSubmit={submitHandler}>
-              <h1>Signup</h1>
-              <Input
-                addonBefore="User name"
-                type="name"
-                value={username}
-                placeholder="Enter name"
-                onChange={(e) => setUsername(e.target.value)}
-              />
-              <br />
-              <br />
-              <Input
-                addonBefore="Email"
-                type="email"
-                value={email}
-                placeholder="Enter email"
-                onChange={(e) => setEmail(e.target.value)}
-              />
-              <br />
-              <br />
-              <Input
-                addonBefore="Password"
-                type={!passwordShown ? "password" : "text"}
-                addonAfter={
-                  <IconTaggle
-                    Action={togglePassword}
-                    Condition={passwordShown}
-                  />
-                }
-                value={password}
-                placeholder="Password"
-                autocomplete="new-password"
-                onChange={(e) => setPassword(e.target.value)}
-              />
-              <br />
-              <br />
-              <Input
-                addonBefore="Confirm  "
-                type={!confirmShown ? "password" : "text"}
-                addonAfter={
-                  <IconTaggle Action={toggleConfirm} Condition={confirmShown} />
-                }
-                value={confirmpassword}
-                placeholder="Confirm Password"
-                onChange={(e) => setConfirmPassword(e.target.value)}
-              />
+            {picMessage && (
+              <ErrorMessage variant="danger">{picMessage}</ErrorMessage>
+            )}
 
-              {picMessage && (
-                <ErrorMessage variant="danger">{picMessage}</ErrorMessage>
-              )}
-
-              {/* <Form.Group id="pic">
+            {/* <Form.Group id="pic">
                 <Form.Label>Profile Picture</Form.Label>
                 <Form.Control
                   onChange={(e) => postDetails(e.target.files[0])}
@@ -158,15 +151,17 @@ export default function Registerpage() {
                   placeholder="Upload Profile Picture"
                 />
               </Form.Group> */}
-              <br />
-              <br />
-              <button type="submit">Register</button>
-            </form>
-            <div style={{ textAlign: "center", marginTop: "1rem" }}>
-              Have an Account ? <Link to="/login">Login</Link>
-            </div>
+            <br />
+            <br />
+            <button type="submit">Register</button>
+            <div style={{ height: "8px" }} />
+            {error && <ErrorMessage variant="error" message={error} />}
+            {message && <ErrorMessage variant="error" message={error} />}
+          </form>
+          <div style={{ textAlign: "center", marginTop: "1rem" }}>
+            Have an Account ? <Link to="/login">Login</Link>
           </div>
-        </MainScreen>
+        </div>
       )}
     </>
   );
