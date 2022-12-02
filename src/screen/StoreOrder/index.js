@@ -1,6 +1,7 @@
 import { React, useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { getMerchantStore } from "../../redux/actions";
+import { Row, Col } from "antd";
 import { AntSpinload } from "../../components";
 import { OrderItem } from "../../containers";
 
@@ -23,13 +24,41 @@ export default function StoreOrder() {
       ) : (
         store?.map((s, i) => (
           <>
-            <h2>{s.storename}</h2>
-            <h2>
-              The Catalog list for The Store to send
-              <br />
-              {s.merchant.email}
-            </h2>
-            <h2></h2>
+            <div style={{ marginLeft: "1rem" }}>
+              <Row
+                style={{
+                  width: "25rem",
+                  backgroundColor: "#096dd9",
+                  borderRadius: "1rem",
+                }}
+              >
+                <Col xl={{ span: 6 }} xs={{ span: 6 }}>
+                  <div
+                    style={{
+                      width: "90px",
+                      height: "90px",
+                      backgroundColor: "#91d5ff",
+                      color: "white",
+                      borderRadius: "50px",
+                      textAlign: "center",
+                    }}
+                  >
+                    <img
+                      src="https://res.cloudinary.com/dp3zeejct/image/upload/v1669979621/Emagi/shoponline_aejsp7.png"
+                      style={{ marginTop: "18px", width: "80px" }}
+                      alt={"shopimage"}
+                    />
+                  </div>
+                </Col>
+                <Col xl={{ span: 12 }} xs={{ span: 12 }}>
+                  <h2 style={{ marginTop: "15px", color: "white" }}>
+                    {s.storename} Catalogs
+                    <br />
+                    {s.merchant.email}
+                  </h2>
+                </Col>
+              </Row>
+            </div>
             <OrderItem
               orders={s.orders}
               render={rerender}

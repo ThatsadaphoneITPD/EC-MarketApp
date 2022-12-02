@@ -100,6 +100,13 @@
   position: absolute;
   vertical-align: middle;
 }
+.SlideShow_Carousel_size {
+  width: 100%;
+  height: auto;
+  max-height: auto;
+  max-width: auto;
+  vertical-align: middle;
+}
 .Detail_Carousel_color {
   background-color: var(--primaryDetail-colorDetail-color);
 }

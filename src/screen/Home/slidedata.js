@@ -59,4 +59,32 @@ const sildesData = [
   },
 ];
 
-export { sildesData };
+const sildesShow = [
+  {
+    id: 1,
+    image:
+      "https://res.cloudinary.com/dp3zeejct/image/upload/v1669978039/Emagi/shoes_1-2560x1439-removebg-preview_ci0mte.png",
+  },
+  {
+    id: 2,
+    image:
+      "https://res.cloudinary.com/dp3zeejct/image/upload/v1669978043/Emagi/OIP__2_-removebg-preview_dt0nn4.png",
+  },
+  {
+    id: 3,
+    image:
+      "https://res.cloudinary.com/dp3zeejct/image/upload/v1669978290/Emagi/item_XL_35213042_136920729-removebg-preview_elgdya.png",
+  },
+  {
+    id: 4,
+    image:
+      "https://res.cloudinary.com/dp3zeejct/image/upload/v1669978038/Emagi/R__2_-removebg-preview_vub8fm.png",
+  },
+  {
+    id: 5,
+    image:
+      "https://res.cloudinary.com/dp3zeejct/image/upload/v1669978038/Emagi/R-removebg-preview_esrq4h.png",
+  },
+];
+
+export { sildesData, sildesShow };

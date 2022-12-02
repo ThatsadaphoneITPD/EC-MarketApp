@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { getMerchantStore } from "../../redux/actions";
 import { AntSpinload, ProductCard, AddFloatig } from "../../components";
-import { Modal } from "antd";
+import { Modal, Row, Col } from "antd";
 import { ProductFrom } from "../../containers";
 import { MdAdd } from "react-icons/md";
 export default function Store() {
@@ -31,12 +31,43 @@ export default function Store() {
         store &&
         store.map((s, i) => (
           <>
-            <h2>{s.storename}</h2>
-            <h2>
-              Hi Hi, UserMerchant!
-              <br />
-              {s.merchant.email}
-            </h2>
+            <div style={{ marginLeft: "1rem" }}>
+              <Row
+                style={{
+                  width: "25rem",
+                  backgroundColor: "#096dd9",
+                  borderRadius: "1rem",
+                }}
+              >
+                <Col xl={{ span: 6 }} xs={{ span: 6 }}>
+                  <div
+                    style={{
+                      width: "90px",
+                      height: "90px",
+                      backgroundColor: "#91d5ff",
+                      color: "white",
+                      borderRadius: "50px",
+                      textAlign: "center",
+                    }}
+                  >
+                    <img
+                      src="https://res.cloudinary.com/dp3zeejct/image/upload/v1669979621/Emagi/shoponline_aejsp7.png"
+                      style={{ marginTop: "18px", width: "80px" }}
+                      alt={"shopimage"}
+                    />
+                  </div>
+                </Col>
+                <Col xl={{ span: 12 }} xs={{ span: 12 }}>
+                  <h2
+                    style={{ marginTop: "15px", color: "white", width: "100%" }}
+                  >
+                    {s.storename} Factory
+                    <br />
+                    {s.merchant.email}
+                  </h2>
+                </Col>
+              </Row>
+            </div>
             <ProductCard
               data={s.product}
               render={rerender}
