@@ -241,7 +241,7 @@ function Accordion({ detail, products }) {
                               {item["price"] &&
                                 item["price"].toLocaleString("de-DE", {
                                   style: "currency",
-                                  currency: "EUR",
+                                  currency: "USD",
                                 })}
                             </span>
 

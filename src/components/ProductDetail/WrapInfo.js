@@ -68,7 +68,7 @@ export default function WrapInfo({ detail }) {
                   {detail["price"] &&
                     detail["price"].toLocaleString("de-DE", {
                       style: "currency",
-                      currency: "EUR",
+                      currency: "USD",
                     })}
                 </span>
               </div>
